@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact Mondrian Replica</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .canvas {
+      position: relative;
+      width: 604px;
+      height: 607px;
+    }
+    .block {
+      position: absolute;
+      box-sizing: border-box;
+      border: 6px solid #111;
+    }
+    .red {
+      top:   0px;   left:   0px;
+      width: 256px; height:333px;
+      background: #e62e2a;
+    }
+    .white-1 {
+      top:    0px;   left:  256px;
+      width:  342px; height:333px;
+      background: #f2f2ec;
+    }
+    .white-2 {
+      top:   333px;  left:   0px;
+      width: 256px;  height:238px;
+      background: #f2f2ec;
+    }
+    .white-3 {
+      top:   333px;  left:  256px;
+      width: 291px;  height:238px;
+      background: #f2f2ec;
+    }
+    .blue {
+      top:   333px;  left:  547px;
+      width:  51px;  height: 95px;
+      background: #004aad;
+    }
+    .black1{
+        top: 428px; left: 547px;
+        width: 51px; height: 20px;
+        background: black;
+    }
+    .white-4{
+        top: 448px; left: 547px;
+        width: 51px; height: 123px;
+    }
+    .white-5 {
+      top:   571px;  left:    0px;
+      width:256px;   height: 25px;
+      background: #f2f2ec;
+    }
+    .yellow {
+      top:   571px;  left:  256px;
+      width:158px;   height: 25px;
+      background: #ffd500;
+    }
+    .black2 {
+      top:   571px;  left:  414px;
+      width:133px;   height: 25px;
+      background: #111;
+    }
+    .white-6 {
+      top:   569px;  left:  547px;
+      width:  51px;  height: 27px;
+      background: #f2f2ec;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="block red"></div>
+    <div class="block white-1"></div>
+    <div class="block white-2"></div>
+    <div class="block white-3"></div>
+    <div class="block blue"></div>
+    <div class="block black1"></div>
+    <div class="block white-4"></div>
+    <div class="block white-5"></div>
+    <div class="block yellow"></div>
+    <div class="block black2"></div>
+    <div class="block white-6"></div>
+  </div>
+</body>
+</html>

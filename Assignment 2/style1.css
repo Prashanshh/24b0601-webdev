@@ -1,0 +1,40 @@
+hr {
+  color: red;
+  height: 2px;
+  background-color: red;
+}
+
+p {
+  text-decoration: underline;
+}
+
+#intro {
+  border: 2px solid black;
+  height: 50px;
+  width: 300px;
+  padding: 20px;
+  
+}
+
+#invite {
+  border: 2px solid blue;
+  height: 80px;
+  width: 300px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#socials {
+  border: 2px solid blue;
+  height: 100px;
+  width: 300px;
+  display: inline-block;   
+  vertical-align: top;   
+}
+
+a {
+  border: 2px solid green;
+  display: inline-block;
+  margin: 5px;
+}

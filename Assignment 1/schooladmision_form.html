@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>School Admission form</h1>
+    <br>
+    <form>
+        <h3>Personal information</h3>
+        <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" required> 
+        <br><br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Last Name" required>
+        <br><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB" required>
+        <label for="Gender"> GENDER:</label>
+        <input type="radio" value="Male" name="Gender">Male 
+        <input type="radio" value="Female" name="Gender">Female 
+        <input type="radio" value="other" name="Gender">other
+        <br><br>
+        <label for="Adress">Adress:</label>
+        <textarea name="Adress" id="Adress" required></textarea>
+        <br><br><br><br>
+        <h3>Acadmic Details</h3>
+        <label for="Grade applying for">Grade applying for </label>
+        <select id="grade" name="grade" required>
+                <option value="">--Select--</option>
+                <option value="Nursery">Nursery</option>
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        <br><br>
+        <label for="Previous School">Previous School(if any)</label>
+        <input type="text" id="Previous School" >
+        <br><br><br><br>
+        <h3>Gurdian Information</h3>
+        <label for="Gurdian Name">Gurdian Name</label>
+        <input type ="text" id="Gurdian Name" required>
+        <br><br>
+        <label for="Number">Contact Number</label>
+        <input type="text" id="Number" required>
+        <br><br><BR><BR>
+        <p>Upload Documents</p>
+            <label for="photo">Upload Recent Photograph:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <BR><BR>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

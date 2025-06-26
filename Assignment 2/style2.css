@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5d777a;
+  align-items:center ;
+  font-family: 'Segoe UI';
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+#container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;  
+  gap: 20px;                
+  max-width: 1200px;       
+  width: 100%;
+}
+
+
+#div1,
+#div2,
+#div3 { 
+  border: 2px solid #333;
+  border-radius: 8px;
+  width: 300px;           
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+
+#div1 {
+  background-color: #f2db59;  
+}
+
+#div2 {
+  background-color: #5D88BB;  
+}
+
+#div3 {
+  background-color: #b7410e;  
+}
+
+
+#div1 img,
+#div2 img,
+#div3 img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+
+#div1 h3,
+#div2 h3,
+#div3 h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+#div1 p,
+#div2 p,
+#div3 p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+
+#div1 a,
+#div2 a,
+#div3 a {
+  display: inline-block;
+  margin-top: auto;       
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+#div1 a:hover,
+#div2 a:hover,
+#div3 a:hover {
+  background-color: #555;
+}
+
+#div1:hover,
+#div2:hover,
+#div3:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+

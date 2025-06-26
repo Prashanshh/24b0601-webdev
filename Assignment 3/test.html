@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Loaders</title>
+<style>
+/* Container styling */
+body { display: flex; flex-wrap: wrap; gap: 20px; background: #f0f0f0; font-family: sans-serif; }
+.loader-container { width: 150px; text-align: center; }
+.loader { position: relative; width: 80px; height: 80px; margin: 0 auto; }
+
+/* Loader 1: Orbiting dot */
+.loader1 .dot {
+  position: absolute; top: 0; left: 50%; width: 12px; height: 12px;
+  background: black; border-radius: 50%; transform: translateX(-50%);
+}
+.loader1 {
+  animation: spin1 2s linear infinite;
+}
+@keyframes spin1 {
+  to { transform: rotate(360deg); }
+}
+
+/* Loader 2: Horizontal dots */
+.loader2 .dot {
+  position: absolute; top: 50%; width: 12px; height: 12px;
+  background: black; border-radius: 50%;
+}
+.loader2 .dot:first-child {
+  left: 0; transform: translateY(-50%);
+  animation: move2 1s ease-in-out infinite;
+}
+.loader2 .dot:last-child {
+  right: 0; transform: translateY(-50%);
+  animation: move2 1s ease-in-out infinite 0.5s;
+}
+@keyframes move2 {
+  0%, 100% { transform: translateY(-50%) translateX(0); opacity: 1; }
+  50% { transform: translateY(-50%) translateX(20px); opacity: 0; }
+}
+
+/* Loader 3: Diagonal dots */
+.loader3 .dot {
+  position: absolute; width: 12px; height: 12px;
+  background: black; border-radius: 50%;
+}
+.loader3 .dot:first-child {
+  top: 0; left: 0;
+  animation: move3 1s ease-in-out infinite;
+}
+.loader3 .dot:last-child {
+  bottom: 0; right: 0;
+  animation: move3 1s ease-in-out infinite 0.5s;
+}
+@keyframes move3 {
+  0%, 100% { transform: translate(0, 0); opacity: 1; }
+  50% { transform: translate(30px, 30px); opacity: 0; }
+}
+
+/* Loader 4: Vertical bounce */
+.loader4 .dot {
+  position: absolute; left: 50%; width: 12px; height: 12px;
+  background: black; border-radius: 50%; transform: translateX(-50%);
+  animation: move4 1s ease-in-out infinite;
+}
+@keyframes move4 {
+  0%, 100% { transform: translate(-50%, -40px); }
+  50% { transform: translate(-50%, 40px); }
+}
+
+/* Loader 5: Spinning ring */
+.loader5 {
+  width: 80px; height: 80px;
+  border: 6px solid black; border-top-color: transparent; border-radius: 50%;
+  animation: spin5 1s linear infinite;
+}
+@keyframes spin5 {
+  to { transform: rotate(360deg); }
+}
+
+/* Loader 6: Vertical bar */
+.loader6 .bar {
+  position: absolute; left: 50%; top: 0; width: 12px;
+  height: 50%; background: black; transform-origin: bottom center;
+  animation: scale6 1s ease-in-out infinite;
+}
+@keyframes scale6 {
+  0%, 100% { transform: scaleY(0.1); }
+  50% { transform: scaleY(1); }
+}
+</style>
+</head>
+<body>
+
+<div class="loader-container">
+  <h3>Loader 1</h3>
+  <div class="loader loader1"><div class="dot"></div></div>
+</div>
+
+<div class="loader-container">
+  <h3>Loader 2</h3>
+  <div class="loader loader2">
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<div class="loader-container">
+  <h3>Loader 3</h3>
+  <div class="loader loader3">
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<div class="loader-container">
+  <h3>Loader 4</h3>
+  <div class="loader loader4"><div class="dot"></div></div>
+</div>
+
+<div class="loader-container">
+  <h3>Loader 5</h3>
+  <div class="loader loader5"></div>
+</div>
+
+<div class="loader-container">
+  <h3>Loader 6</h3>
+  <div class="loader loader6"><div class="bar"></div></div>
+</div>
+
+</body>
+</html>
