@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elden Ring Codex</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #0f0f0f;
+      --panel: #1a1a1a;
+      --gold: #ddb76e;
+      --text-main: #ece8dd;
+      --text-muted: #888;
+      --font-title: 'Cinzel', serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--body-font);
+    }
+    .navbar {
+      background-color: var(--panel);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .navbar-brand {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      color: var(--gold) !important;
+    }
+    .nav-link {
+      color: var(--text-main) !important;
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      background-color: var(--gold);
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .hero {
+      background: url('https://images5.alphacoders.com/122/1228379.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-content {
+      background: rgba(15, 15, 15, 0.6);
+      padding: 40px;
+      border: 1px solid var(--gold);
+      backdrop-filter: blur(4px);
+    }
+    .hero-content h1 {
+      font-family: var(--font-title);
+      font-size: 3rem;
+      color: var(--gold);
+    }
+    .section-title {
+      font-family: var(--font-title);
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .card {
+      background-color: var(--panel);
+      border: 1px solid #333;
+      color: var(--text-main);
+    }
+    .card-title {
+      font-family: var(--font-title);
+      color: var(--gold);
+    }
+    footer {
+      background: var(--panel);
+      color: var(--text-muted);
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .navbar-toggler, .collapse:not(.show) {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Elden Ring Codex</a>
+      <div class="navbar-collapse d-flex justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#builds">Builds</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bosses">Bosses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Enter the Lands Between</h1>
+      <p>Discover legendary builds, epic bosses, and the path to Elden Lord.</p>
+    </div>
+  </section>
+
+  <section id="builds" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Top Builds</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZJ5iMBVfTQ9cnwMVYzrar1wXXDtfhLu0Kg&s" class="card-img-top" alt="Bleed Build">
+            <div class="card-body">
+              <h5 class="card-title">Rivers of Blood</h5>
+              <p class="card-text">Harness the power of blood loss and fast strikes with this deadly katana-based setup.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://i.ytimg.com/vi/-Y1HIo8Mqq4/maxresdefault.jpg" class="card-img-top" alt="Magic Build">
+            <div class="card-body">
+              <h5 class="card-title">Carian Sorcerer</h5>
+              <p class="card-text">Master the glintstone arts and rain down destruction from afar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://i.ytimg.com/vi/d4mXImBcG4I/maxresdefault.jpg" class="card-img-top" alt="Tank Build">
+            <div class="card-body">
+              <h5 class="card-title">Dragon Warrior</h5>
+              <p class="card-text">An Arcane Build that uses Bleed and rapid attacks to build up Attack Power and then unleash deadly Dragon attacks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bosses" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title">Iconic Bosses</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://theanalyticalgeek.com/wp-content/uploads/2023/12/Radahn-Main-1.webp" class="card-img-top" alt="Radahn">
+            <div class="card-body">
+              <h5 class="card-title">General Radahn</h5>
+              <p class="card-text">A demigod warrior battling the stars themselves. His festival draws Tarnished from across the realm.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://assetsio.gnwcdn.com/elden-ring-malenia-1.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" class="card-img-top" alt="Malenia">
+            <div class="card-body">
+              <h5 class="card-title">Malenia, Blade of Miquella</h5>
+              <p class="card-text">Perhaps the most feared foe—unmatched in grace, speed, and devastating recovery strikes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Join the Tarnished</h2>
+      <p class="text-muted">Connect with fellow adventurers, share your builds, and become legend.</p>
+      <p><a href="https://discord.gg/eldenring" class="btn btn-outline-warning me-2" target="_blank">Discord</a>
+         <a href="https://reddit.com/r/Eldenring" class="btn btn-outline-warning" target="_blank">Reddit</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elden Ring Codex. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
